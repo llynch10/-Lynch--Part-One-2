@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Bungee', cursive;
+}
+
+body { 
+    margin: auto 5%;
+}
+
+header{
+    display: flex;
+}
+#topbuttons {
+    color: #7944e6;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.top-link{
+    margin-left: 5%;
+}
+a {
+    text-decoration: none;
+    font-size : 1.2em;
+}
+a:hover {
+  color:  #10fdff;
+}
+
+section{
+    background-color: #ff00ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > img {
+    height:70%;
+    width: 70%;
+}
+section > div{
+    width: 100%;
+    padding: 5%;
+}
+
+section > div > h1{
+    margin: 0;
+}
+
+section > div > p{
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+
+.float-right{
+    float:right;
+}
+
+ul > .card > img {
+    width: 50%;
+    height: 70%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #7944e6;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 2%;
+}
+
+ul > .card > span{
+    font-size : 1.2em;
+}
+.column-50{
+    width: 50%;
+    float:left;
+}
+@media screen and (min-width: 768px){
+    ul {
+        flex-direction: row;
+    }
+
+    a {
+        text-decoration: none;
+        font-size : 25px;
+        margin: 2% 0 2% 2%;
+        float: right;
+    }
+    section > div{
+        width: 45%;
+    }
+    section{
+        flex-direction: row;
+    }
+    ul > .card > a{
+        font-size : 1.2em;
+    }
+    section > img {
+        height:70%;
+        width: 50%;
+    }
+}
